@@ -6,11 +6,11 @@
 
 
 #ifndef TFT_WIDTH
-#define TFT_WIDTH 240
+#define TFT_WIDTH 320
 #endif
 
 #ifndef TFT_HEIGHT
-#define TFT_HEIGHT 320
+#define TFT_HEIGHT 240
 #endif
 
 struct Point {
