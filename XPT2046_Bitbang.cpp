@@ -106,11 +106,11 @@ Point XPT2046_Bitbang::getTouch() {
     int x = readSPI(CMD_READ_X);
     int y = readSPI(CMD_READ_Y);
     digitalWrite(_csPin, HIGH);
-    x = map(x, cal.xMin, cal.xMax, 0, TFT_WIDTH);
-    y = map(y, cal.yMin, cal.yMax, 0, TFT_HEIGHT);
-    if (x > TFT_WIDTH){x = TFT_WIDTH;}
+    //x = map(x, cal.xMin, cal.xMax, 0, TFT_WIDTH);
+    //y = map(y, cal.yMin, cal.yMax, 0, TFT_HEIGHT);
+    //if (x > TFT_WIDTH){x = TFT_WIDTH;}
     if (x < 0){x = 0;}
-    if (y > TFT_HEIGHT){y = TFT_HEIGHT;}
+    //if (y > TFT_HEIGHT){y = TFT_HEIGHT;}
     if (y < 0){y = 0;}
     return Point{x, y};
 }
